@@ -83,23 +83,12 @@
     };
     ion.fn.ajax = function(config) {
         var http = new XMLHttpRequest();
-        if(!config.method) config.method = 'GET';
+        config.method = (config.method) ? config.method : 'GET';
         http.onreadystatechange = function() { if(config.success) { config.success(http); } };
-        /*
-        if(config.method == 'get' || config.method == 'GET') {
-            (config.data == '' || !config.data) ? http.open(config.method, config.action, true) : http.open(config.method, config.action + '?' + config.data, true);
-        }
-        */
         if(config.method == 'get' || config.method == 'GET') (config.data == '' || !config.data) ? http.open(config.method, config.action, true) : http.open(config.method, config.action + '?' + config.data, true);
         else http.open(config.method, config.action, true);
         if(config.contentType) http.setRequestHeader("Content-type", config.contentType);
         if(config.method == 'get' || config.method == 'GET') http.send();
-        /*
-        else {
-            if(config.data == '' || !config.data) http.send();
-            else http.send(config.data);
-        }
-        */
         else (config.data == '' || !config.data) ? http.send() : http.send(config.data);
     };
     ion.fn.log = function(str) {
