@@ -83,6 +83,7 @@
     };
     ion.fn.ajax = function(config) {
         var http = new XMLHttpRequest();
+        if(!config.method) config.method = 'GET';
         http.onreadystatechange = function() { config.success(http); };
         if(config.method == 'get' || config.method == 'GET') http.open(config.method, config.action + '?' + config.data, true);
         else http.open(config.method, config.action, true);
