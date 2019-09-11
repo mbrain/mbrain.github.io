@@ -84,10 +84,11 @@
     ion.fn.ajax = function(config) {
         var http = new XMLHttpRequest();
         http.onreadystatechange = function() { config.success(http); };
-        http.open(config.method, config.action, true);
+        if(config.method == 'get' || config.method == 'GET') http.open(config.method, config.action + '?' + config.data, true);
+        else http.open(config.method, config.action, true);
         if(config.contentType) http.setRequestHeader("Content-type", config.contentType);
-        if(config.data) http.send(config.data);
-        else http.send();    
+        if(config.method == 'get' || config.method == 'GET') http.send();
+        else http.send(config.data);    
     };
     ion.fn.log = function(str) {
         console.log('log: ' + str);
