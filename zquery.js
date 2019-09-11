@@ -1,3 +1,6 @@
+/*
+Embed URI: https://cdn.zarat.ml/zquery.js
+*/
 (function(window, undefined) {
     var domReadyStack = [];
     function handleDOMReady(fn) {
