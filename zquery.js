@@ -98,8 +98,9 @@ Embed URI: https://cdn.zarat.ml/zquery.js
         console.log('log: ' + str);
     };
     ion.fn.toggle = function(el) {
-        console.log(el);
-        el.style.display = (el.style.display == 'none' || el.style.display == 'undefined' || el.style.display == '') ? 'block' : 'none';    
+        console.log(el.style);
+        //el.style.display = (el.style.display == 'none' || el.style.display == 'undefined' || el.style.display == '') ? 'block' : 'none'; 
+        
     };
     window.$ = ion;
 })(window);
