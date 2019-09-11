@@ -92,7 +92,13 @@
         else http.open(config.method, config.action, true);
         if(config.contentType) http.setRequestHeader("Content-type", config.contentType);
         if(config.method == 'get' || config.method == 'GET') http.send();
-        else http.send(config.data);    
+        /*
+        else {
+            if(config.data == '' || !config.data) http.send();
+            else http.send(config.data);
+        }
+        */
+        else (config.data == '' || !config.data) ? http.send() : http.send(config.data);
     };
     ion.fn.log = function(str) {
         console.log('log: ' + str);
