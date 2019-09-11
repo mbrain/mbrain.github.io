@@ -86,8 +86,11 @@
         if(!config.method) config.method = 'GET';
         http.onreadystatechange = function() { if(config.success) { config.success(http); } };
         if(config.method == 'get' || config.method == 'GET') {
+            /*
             if(config.data == '' || !config.data) http.open(config.method, config.action, true);
             else http.open(config.method, config.action + '?' + config.data, true);
+            */
+            (config.data == '' || !config.data) ? http.open(config.method, config.action, true) : http.open(config.method, config.action + '?' + config.data, true);
         }
         else http.open(config.method, config.action, true);
         if(config.contentType) http.setRequestHeader("Content-type", config.contentType);
