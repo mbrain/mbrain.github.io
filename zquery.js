@@ -49,13 +49,20 @@ Embed URI: https://cdn.zarat.ml/zquery.js
         else Array.prototype.forEach.call(this, callback);
     };
     ion.fn.addClass = function(classes) {
-        return this.each(function() {
-            this.className += ' ' + classes;
+        //return this.each(function() { this.className += ' ' + classes; });
+        return this.each(function(el) { 
+            if(!el.className.match('/' + classes + '/g')) {                
+                if(el.className != '' && el.className != ' ') el.className += ' ' + classes;
+                else el.className = classes;               
+            } else {
+                el.className.replace(new RegExp('\\b' + classes + '\\b', 'g'), '');
+            }
         });
     };
     ion.fn.removeClass = function(className) {
-        return this.each(function() {
-            this.className = this.className.replace(new RegExp('\\b' + className + '\\b', 'g'), '');
+        //return this.each(function() { this.className = this.className.replace(new RegExp('\\b' + className + '\\b', 'g'), ''); });
+        return this.each(function(el) { 
+            el.className = el.className.replace(new RegExp('\\b' + className + '\\b', 'g'), '');
         });
     };
     ion.fn.attr = function(val) {
@@ -87,7 +94,7 @@ Embed URI: https://cdn.zarat.ml/zquery.js
     ion.fn.ajax = function(config) {
         var http = new XMLHttpRequest();
         config.method = (config.method) ? config.method : 'GET';
-        http.onreadystatechange = function() { if(config.success) { config.success(http); } };
+        http.onreadystatechange = function() { if(http.readyState == 4 && http.status == 200) if(config.success) { config.success(http); } };
         if(config.method == 'get' || config.method == 'GET') (config.data == '' || !config.data) ? http.open(config.method, config.action, true) : http.open(config.method, config.action + '?' + config.data, true);
         else http.open(config.method, config.action, true);
         if(config.contentType) http.setRequestHeader("Content-type", config.contentType);
@@ -98,9 +105,8 @@ Embed URI: https://cdn.zarat.ml/zquery.js
         console.log('log: ' + str);
     };
     ion.fn.toggle = function(el) {
-        console.log(el.style);
-        //el.style.display = (el.style.display == 'none' || el.style.display == 'undefined' || el.style.display == '') ? 'block' : 'none'; 
-        
+        //el = el[0];
+        el[0].style.display = (el[0].style.display == 'none' || el[0].style.display == 'undefined' || el[0].style.display == '') ? 'block' : 'none'; 
     };
     window.$ = ion;
 })(window);
