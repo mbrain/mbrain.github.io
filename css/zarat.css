@@ -1,0 +1,240 @@
+/* z.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-mozarat-focus-inner,[type=button]::-mozarat-focus-inner,[type=reset]::-mozarat-focus-inner,[type=submit]::-mozarat-focus-inner{border-style:none;padding:0}
+button:-mozarat-focusring,[type=button]:-mozarat-focusring,[type=reset]:-mozarat-focusring,[type=submit]:-mozarat-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.zarat-serif{font-family:serif}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.zarat-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.zarat-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.zarat-table,.zarat-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.zarat-table-all{border:1px solid #ccc}
+.zarat-bordered tr,.zarat-table-all tr{border-bottom:1px solid #ddd}.zarat-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.zarat-table-all tr:nth-child(odd){background-color:#fff}.zarat-table-all tr:nth-child(even){background-color:#f1f1f1}
+.zarat-hoverable tbody tr:hover,.zarat-ul.zarat-hoverable li:hover{background-color:#ccc}.zarat-centered tr th,.zarat-centered tr td{text-align:center}
+.zarat-table td,.zarat-table th,.zarat-table-all td,.zarat-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.zarat-table th:first-child,.zarat-table td:first-child,.zarat-table-all th:first-child,.zarat-table-all td:first-child{padding-left:16px}
+.zarat-btn,.zarat-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.zarat-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.zarat-btn,.zarat-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-mozarat-user-select:none;-ms-user-select:none;user-select:none}   
+.zarat-disabled,.zarat-btn:disabled,.zarat-button:disabled{cursor:not-allowed;opacity:0.3}.zarat-disabled *,:disabled *{pointer-events:none}
+.zarat-btn.zarat-disabled:hover,.zarat-btn:disabled:hover{box-shadow:none}
+.zarat-badge,.zarat-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.zarat-badge{border-radius:50%}
+.zarat-ul{list-style-type:none;padding:0;margin:0}.zarat-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.zarat-ul li:last-child{border-bottom:none}
+.zarat-tooltip,.zarat-display-container{position:relative}.zarat-tooltip .zarat-text{display:none}.zarat-tooltip:hover .zarat-text{display:inline-block}
+.zarat-ripple:active{opacity:0.5}.zarat-ripple{transition:opacity 0s}
+.zarat-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.zarat-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.zarat-dropdown-click,.zarat-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.zarat-dropdown-hover:hover .zarat-dropdown-content{display:block}
+.zarat-dropdown-hover:first-child,.zarat-dropdown-click:hover{background-color:#ccc;color:#000}
+.zarat-dropdown-hover:hover > .zarat-button:first-child,.zarat-dropdown-click:hover > .zarat-button:first-child{background-color:#ccc;color:#000}
+.zarat-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;zarat-index:1}
+.zarat-check,.zarat-radio{width:24px;height:24px;position:relative;top:6px}
+.zarat-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;zarat-index:1;overflow:auto}
+.zarat-bar-block .zarat-dropdown-hover,.zarat-bar-block .zarat-dropdown-click{width:100%}
+.zarat-bar-block .zarat-dropdown-hover .zarat-dropdown-content,.zarat-bar-block .zarat-dropdown-click .zarat-dropdown-content{min-width:100%}
+.zarat-bar-block .zarat-dropdown-hover .zarat-button,.zarat-bar-block .zarat-dropdown-click .zarat-button{width:100%;text-align:left;padding:8px 16px}
+.zarat-main,#main{transition:margin-left .4s}
+.zarat-modal{zarat-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.zarat-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.zarat-bar{width:100%;overflow:hidden}.zarat-center .zarat-bar{display:inline-block;width:auto}
+.zarat-bar .zarat-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.zarat-bar .zarat-dropdown-hover,.zarat-bar .zarat-dropdown-click{position:static;float:left}
+.zarat-bar .zarat-button{white-space:normal}
+.zarat-bar-block .zarat-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.zarat-bar-block.zarat-center .zarat-bar-item{text-align:center}.zarat-block{display:block;width:100%}
+.zarat-responsive{display:block;overflow-x:auto}
+.zarat-container:after,.zarat-container:before,.zarat-panel:after,.zarat-panel:before,.zarat-row:after,.zarat-row:before,.zarat-row-padding:after,.zarat-row-padding:before,
+.zarat-cell-row:before,.zarat-cell-row:after,.zarat-clear:after,.zarat-clear:before,.zarat-bar:before,.zarat-bar:after{content:"";display:table;clear:both}
+.zarat-col,.zarat-half,.zarat-third,.zarat-twothird,.zarat-threequarter,.zarat-quarter{float:left;width:100%}
+.zarat-col.s1{width:8.33333%}.zarat-col.s2{width:16.66666%}.zarat-col.s3{width:24.99999%}.zarat-col.s4{width:33.33333%}
+.zarat-col.s5{width:41.66666%}.zarat-col.s6{width:49.99999%}.zarat-col.s7{width:58.33333%}.zarat-col.s8{width:66.66666%}
+.zarat-col.s9{width:74.99999%}.zarat-col.s10{width:83.33333%}.zarat-col.s11{width:91.66666%}.zarat-col.s12{width:99.99999%}
+
+@media (min-width:601px){.zarat-col.m1{width:8.33333%}.zarat-col.m2{width:16.66666%}.zarat-col.m3,.zarat-quarter{width:24.99999%}.zarat-col.m4,.zarat-third{width:33.33333%}
+.zarat-col.m5{width:41.66666%}.zarat-col.m6,.zarat-half{width:49.99999%}.zarat-col.m7{width:58.33333%}.zarat-col.m8,.zarat-twothird{width:66.66666%}
+.zarat-col.m9,.zarat-threequarter{width:74.99999%}.zarat-col.m10{width:83.33333%}.zarat-col.m11{width:91.66666%}.zarat-col.m12{width:99.99999%}}
+
+@media (min-width:993px){.zarat-col.l1{width:8.33333%}.zarat-col.l2{width:16.66666%}.zarat-col.l3{width:24.99999%}.zarat-col.l4{width:33.33333%}
+.zarat-col.l5{width:41.66666%}.zarat-col.l6{width:49.99999%}.zarat-col.l7{width:58.33333%}.zarat-col.l8{width:66.66666%}
+.zarat-col.l9{width:74.99999%}.zarat-col.l10{width:83.33333%}.zarat-col.l11{width:91.66666%}.zarat-col.l12{width:99.99999%}}
+.zarat-rest{overflow:hidden}.zarat-stretch{margin-left:-16px;margin-right:-16px}
+.zarat-content,.zarat-auto{margin-left:auto;margin-right:auto}.zarat-content{max-width:980px}.zarat-auto{max-width:1140px}
+.zarat-cell-row{display:table;width:100%}.zarat-cell{display:table-cell}
+.zarat-cell-top{vertical-align:top}.zarat-cell-middle{vertical-align:middle}.zarat-cell-bottom{vertical-align:bottom}
+.zarat-hide{display:none!important}.zarat-show-block,.zarat-show{display:block!important}.zarat-show-inline-block{display:inline-block!important}
+
+@media (max-width:1205px){.zarat-auto{max-width:95%}}
+
+@media (max-width:600px){.zarat-modal-content{margin:0 10px;width:auto!important}.zarat-modal{padding-top:30px}
+.zarat-dropdown-hover.zarat-mobile .zarat-dropdown-content,.zarat-dropdown-click.zarat-mobile .zarat-dropdown-content{position:relative}	
+.zarat-hide-small{display:none!important}.zarat-mobile{display:block;width:100%!important}.zarat-bar-item.zarat-mobile,.zarat-dropdown-hover.zarat-mobile,.zarat-dropdown-click.zarat-mobile{text-align:center}
+.zarat-dropdown-hover.zarat-mobile,.zarat-dropdown-hover.zarat-mobile .zarat-btn,.zarat-dropdown-hover.zarat-mobile .zarat-button,.zarat-dropdown-click.zarat-mobile,.zarat-dropdown-click.zarat-mobile .zarat-btn,.zarat-dropdown-click.zarat-mobile .zarat-button{width:100%}}
+
+@media (max-width:768px){.zarat-modal-content{width:500px}.zarat-modal{padding-top:50px}}
+
+@media (min-width:993px){.zarat-modal-content{width:900px}.zarat-hide-large{display:none!important}.zarat-sidebar.zarat-collapse{display:block!important}}
+
+@media (max-width:992px) and (min-width:601px){.zarat-hide-medium{display:none!important}}
+
+@media (max-width:992px){.zarat-sidebar.zarat-collapse{display:none}.zarat-main{margin-left:0!important;margin-right:0!important}.zarat-auto{max-width:100%}}
+.zarat-top,.zarat-bottom{position:fixed;width:100%;zarat-index:1}.zarat-top{top:0}.zarat-bottom{bottom:0}
+.zarat-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);zarat-index:2}
+.zarat-display-topleft{position:absolute;left:0;top:0}.zarat-display-topright{position:absolute;right:0;top:0}
+.zarat-display-bottomleft{position:absolute;left:0;bottom:0}.zarat-display-bottomright{position:absolute;right:0;bottom:0}
+.zarat-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.zarat-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.zarat-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.zarat-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.zarat-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.zarat-display-container:hover .zarat-display-hover{display:block}.zarat-display-container:hover span.zarat-display-hover{display:inline-block}.zarat-display-hover{display:none}
+.zarat-display-position{position:absolute}
+.zarat-circle{border-radius:50%}
+.zarat-round-small{border-radius:2px}.zarat-round,.zarat-round-medium{border-radius:4px}.zarat-round-large{border-radius:8px}.zarat-round-xlarge{border-radius:16px}.zarat-round-xxlarge{border-radius:32px}
+.zarat-row-padding,.zarat-row-padding>.zarat-half,.zarat-row-padding>.zarat-third,.zarat-row-padding>.zarat-twothird,.zarat-row-padding>.zarat-threequarter,.zarat-row-padding>.zarat-quarter,.zarat-row-padding>.zarat-col{padding:0 8px}
+.zarat-container,.zarat-panel{padding:0.01em 16px}.zarat-panel{margin-top:16px;margin-bottom:16px}
+.zarat-code,.zarat-codespan{font-family:Consolas,"courier new";font-size:16px}
+.zarat-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.zarat-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.zarat-card,.zarat-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.zarat-card-4,.zarat-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.zarat-spin{animation:zarat-spin 2s infinite linear}@keyframes zarat-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.zarat-animate-fading{animation:fading 1s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.zarat-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.zarat-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.zarat-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.zarat-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.zarat-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.zarat-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.zarat-animate-input{transition:width 0.4s ease-in-out}.zarat-animate-input:focus{width:100%!important}
+.zarat-opacity,.zarat-hover-opacity:hover{opacity:0.60}.zarat-opacity-off,.zarat-hover-opacity-off:hover{opacity:1}
+.zarat-opacity-max{opacity:0.25}.zarat-opacity-min{opacity:0.75}
+.zarat-greyscale-max,.zarat-grayscale-max,.zarat-hover-greyscale:hover,.zarat-hover-grayscale:hover{filter:grayscale(100%)}
+.zarat-greyscale,.zarat-grayscale{filter:grayscale(75%)}.zarat-greyscale-min,.zarat-grayscale-min{filter:grayscale(50%)}
+.zarat-sepia{filter:sepia(75%)}.zarat-sepia-max,.zarat-hover-sepia:hover{filter:sepia(100%)}.zarat-sepia-min{filter:sepia(50%)}
+.zarat-tiny{font-size:10px!important}.zarat-small{font-size:12px!important}.zarat-medium{font-size:15px!important}.zarat-large{font-size:18px!important}
+.zarat-xlarge{font-size:24px!important}.zarat-xxlarge{font-size:36px!important}.zarat-xxxlarge{font-size:48px!important}.zarat-jumbo{font-size:64px!important}
+.zarat-left-align{text-align:left!important}.zarat-right-align{text-align:right!important}.zarat-justify{text-align:justify!important}.zarat-center{text-align:center!important}
+.zarat-border-0{border:0!important}.zarat-border{border:1px solid #ccc!important}
+.zarat-border-top{border-top:1px solid #ccc!important}.zarat-border-bottom{border-bottom:1px solid #ccc!important}
+.zarat-border-left{border-left:1px solid #ccc!important}.zarat-border-right{border-right:1px solid #ccc!important}
+.zarat-topbar{border-top:6px solid #ccc!important}.zarat-bottombar{border-bottom:6px solid #ccc!important}
+.zarat-leftbar{border-left:6px solid #ccc!important}.zarat-rightbar{border-right:6px solid #ccc!important}
+.zarat-section,.zarat-code{margin-top:16px!important;margin-bottom:16px!important}
+.zarat-margin{margin:16px!important}.zarat-margin-top{margin-top:16px!important}.zarat-margin-bottom{margin-bottom:16px!important}
+.zarat-margin-left{margin-left:16px!important}.zarat-margin-right{margin-right:16px!important}
+.zarat-padding-small{padding:4px 8px!important}.zarat-padding{padding:8px 16px!important}.zarat-padding-large{padding:12px 24px!important}
+.zarat-padding-16{padding-top:16px!important;padding-bottom:16px!important}.zarat-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.zarat-padding-32{padding-top:32px!important;padding-bottom:32px!important}.zarat-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.zarat-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.zarat-left{float:left!important}.zarat-right{float:right!important}
+.zarat-button:hover{color:#000!important;background-color:#ccc!important}
+.zarat-transparent,.zarat-hover-none:hover{background-color:transparent!important}
+.zarat-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.zarat-amber,.zarat-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.zarat-aqua,.zarat-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.zarat-blue,.zarat-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.zarat-light-blue,.zarat-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.zarat-brown,.zarat-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.zarat-cyan,.zarat-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.zarat-blue-grey,.zarat-hover-blue-grey:hover,.zarat-blue-gray,.zarat-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.zarat-green,.zarat-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.zarat-light-green,.zarat-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.zarat-indigo,.zarat-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.zarat-khaki,.zarat-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.zarat-lime,.zarat-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.zarat-orange,.zarat-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.zarat-deep-orange,.zarat-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.zarat-pink,.zarat-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.zarat-purple,.zarat-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.zarat-deep-purple,.zarat-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.zarat-red,.zarat-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.zarat-sand,.zarat-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.zarat-teal,.zarat-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.zarat-yellow,.zarat-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.zarat-white,.zarat-hover-white:hover{color:#000!important;background-color:#fff!important}
+.zarat-black,.zarat-hover-black:hover{color:#fff!important;background-color:#000!important}
+.zarat-grey,.zarat-hover-grey:hover,.zarat-gray,.zarat-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.zarat-light-grey,.zarat-hover-light-grey:hover,.zarat-light-gray,.zarat-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.zarat-dark-grey,.zarat-hover-dark-grey:hover,.zarat-dark-gray,.zarat-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.zarat-pale-red,.zarat-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.zarat-pale-green,.zarat-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.zarat-pale-yellow,.zarat-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.zarat-pale-blue,.zarat-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.zarat-text-amber,.zarat-hover-text-amber:hover{color:#ffc107!important}
+.zarat-text-aqua,.zarat-hover-text-aqua:hover{color:#00ffff!important}
+.zarat-text-blue,.zarat-hover-text-blue:hover{color:#2196F3!important}
+.zarat-text-light-blue,.zarat-hover-text-light-blue:hover{color:#87CEEB!important}
+.zarat-text-brown,.zarat-hover-text-brown:hover{color:#795548!important}
+.zarat-text-cyan,.zarat-hover-text-cyan:hover{color:#00bcd4!important}
+.zarat-text-blue-grey,.zarat-hover-text-blue-grey:hover,.zarat-text-blue-gray,.zarat-hover-text-blue-gray:hover{color:#607d8b!important}
+.zarat-text-green,.zarat-hover-text-green:hover{color:#4CAF50!important}
+.zarat-text-light-green,.zarat-hover-text-light-green:hover{color:#8bc34a!important}
+.zarat-text-indigo,.zarat-hover-text-indigo:hover{color:#3f51b5!important}
+.zarat-text-khaki,.zarat-hover-text-khaki:hover{color:#b4aa50!important}
+.zarat-text-lime,.zarat-hover-text-lime:hover{color:#cddc39!important}
+.zarat-text-orange,.zarat-hover-text-orange:hover{color:#ff9800!important}
+.zarat-text-deep-orange,.zarat-hover-text-deep-orange:hover{color:#ff5722!important}
+.zarat-text-pink,.zarat-hover-text-pink:hover{color:#e91e63!important}
+.zarat-text-purple,.zarat-hover-text-purple:hover{color:#9c27b0!important}
+.zarat-text-deep-purple,.zarat-hover-text-deep-purple:hover{color:#673ab7!important}
+.zarat-text-red,.zarat-hover-text-red:hover{color:#f44336!important}
+.zarat-text-sand,.zarat-hover-text-sand:hover{color:#fdf5e6!important}
+.zarat-text-teal,.zarat-hover-text-teal:hover{color:#009688!important}
+.zarat-text-yellow,.zarat-hover-text-yellow:hover{color:#d2be0e!important}
+.zarat-text-white,.zarat-hover-text-white:hover{color:#fff!important}
+.zarat-text-black,.zarat-hover-text-black:hover{color:#000!important}
+.zarat-text-grey,.zarat-hover-text-grey:hover,.zarat-text-gray,.zarat-hover-text-gray:hover{color:#757575!important}
+.zarat-text-light-grey,.zarat-hover-text-light-grey:hover,.zarat-text-light-gray,.zarat-hover-text-light-gray:hover{color:#f1f1f1!important}
+.zarat-text-dark-grey,.zarat-hover-text-dark-grey:hover,.zarat-text-dark-gray,.zarat-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.zarat-border-amber,.zarat-hover-border-amber:hover{border-color:#ffc107!important}
+.zarat-border-aqua,.zarat-hover-border-aqua:hover{border-color:#00ffff!important}
+.zarat-border-blue,.zarat-hover-border-blue:hover{border-color:#2196F3!important}
+.zarat-border-light-blue,.zarat-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.zarat-border-brown,.zarat-hover-border-brown:hover{border-color:#795548!important}
+.zarat-border-cyan,.zarat-hover-border-cyan:hover{border-color:#00bcd4!important}
+.zarat-border-blue-grey,.zarat-hover-border-blue-grey:hover,.zarat-border-blue-gray,.zarat-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.zarat-border-green,.zarat-hover-border-green:hover{border-color:#4CAF50!important}
+.zarat-border-light-green,.zarat-hover-border-light-green:hover{border-color:#8bc34a!important}
+.zarat-border-indigo,.zarat-hover-border-indigo:hover{border-color:#3f51b5!important}
+.zarat-border-khaki,.zarat-hover-border-khaki:hover{border-color:#f0e68c!important}
+.zarat-border-lime,.zarat-hover-border-lime:hover{border-color:#cddc39!important}
+.zarat-border-orange,.zarat-hover-border-orange:hover{border-color:#ff9800!important}
+.zarat-border-deep-orange,.zarat-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.zarat-border-pink,.zarat-hover-border-pink:hover{border-color:#e91e63!important}
+.zarat-border-purple,.zarat-hover-border-purple:hover{border-color:#9c27b0!important}
+.zarat-border-deep-purple,.zarat-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.zarat-border-red,.zarat-hover-border-red:hover{border-color:#f44336!important}
+.zarat-border-sand,.zarat-hover-border-sand:hover{border-color:#fdf5e6!important}
+.zarat-border-teal,.zarat-hover-border-teal:hover{border-color:#009688!important}
+.zarat-border-yellow,.zarat-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.zarat-border-white,.zarat-hover-border-white:hover{border-color:#fff!important}
+.zarat-border-black,.zarat-hover-border-black:hover{border-color:#000!important}
+.zarat-border-grey,.zarat-hover-border-grey:hover,.zarat-border-gray,.zarat-hover-border-gray:hover{border-color:#9e9e9e!important}
+.zarat-border-light-grey,.zarat-hover-border-light-grey:hover,.zarat-border-light-gray,.zarat-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.zarat-border-dark-grey,.zarat-hover-border-dark-grey:hover,.zarat-border-dark-gray,.zarat-hover-border-dark-gray:hover{border-color:#616161!important}
+.zarat-border-pale-red,.zarat-hover-border-pale-red:hover{border-color:#ffe7e7!important}.zarat-border-pale-green,.zarat-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.zarat-border-pale-yellow,.zarat-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.zarat-border-pale-blue,.zarat-hover-border-pale-blue:hover{border-color:#e7ffff!important}
