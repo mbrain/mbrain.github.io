@@ -244,6 +244,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     margin: .5em;
     padding: .5em;
     border: .1em solid grey;
+    color: grey;
     display: inline-block;
     color: #fff;
 }
