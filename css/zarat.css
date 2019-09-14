@@ -239,15 +239,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .zarat-border-pale-red,.zarat-hover-border-pale-red:hover{border-color:#ffe7e7!important}.zarat-border-pale-green,.zarat-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .zarat-border-pale-yellow,.zarat-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.zarat-border-pale-blue,.zarat-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
-input[type="file"] { display: none; }
-.zarat-file { cursor: inherit;
-    display: block;
-    font-size: 999px;
-    filter: alpha(opacity=0);
-    min-height: 100%;
-    min-width: 100%;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    text-align: right;
-    top: 0; }
+input[type="file"] {
+    display: none;
+}
+.zarat-file {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
