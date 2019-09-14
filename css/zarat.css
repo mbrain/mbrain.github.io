@@ -242,4 +242,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 input[type="file"] {
     //display: none;
 }
-.zarat-file { border: 1px solid #ccc; display: inline-block; padding: 0.5em 1em; cursor: pointer; opacity: 0; content: "ctn"; }
+.zarat-file { border: 1px solid #ccc; display: inline-block; padding: 0.5em 1em; cursor: pointer; content: "ctn"; }
