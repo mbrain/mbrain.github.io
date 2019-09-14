@@ -245,6 +245,7 @@ input[type="file"] { }
   width: 100%;
   text-align: center;
   //margin: 10px;
+  cursor:pointer;
 }
 
 .button-wrapper span.label {
