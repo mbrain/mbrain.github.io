@@ -240,13 +240,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .zarat-border-pale-yellow,.zarat-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.zarat-border-pale-blue,.zarat-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
 .zarat-file {
-    width: 100%;
+    padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%
     margin: .5em;
-    padding: .5em;
-    border: .1em solid grey;
     color: grey;
-    display: inline-block;
-    color: #fff;
 }
 input[type="file"] {
     display: none;
