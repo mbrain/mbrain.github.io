@@ -244,8 +244,7 @@ input[type="file"] { }
   position: relative;
   width: 100%;
   text-align: center;
-  margin-top: .5em;
-  margin-bottom: .5em;
+  padding: .5em;
   cursor:pointer;
 }
 
