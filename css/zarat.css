@@ -240,30 +240,34 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .zarat-border-pale-yellow,.zarat-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.zarat-border-pale-blue,.zarat-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
 input[type="file"] { }
-.zarat-file {
-    width: 200px;
-    height:40px;
-    font-size: 1em;
-    font-weight: 500;
-    color: white;
-    line-height: 2.6em;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #ef494f;
+.button-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 20% auto;
+}
+
+.button-wrapper span.label {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  background: #00bfff;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 0;
+  text-transform:uppercase;
+  font-size:12px;
+}
+
+#upload {
     display: inline-block;
-    border-radius: 10px;
-    box-shadow: 0px 3px 0px #a73337;
-    transition: 150ms;
-}
-
-.zarat-file:focus + label,
-.zarat-file + label:hover {
-    background-color: #ff6c71;
-    box-shadow: 0px 5px 0px #d03338;
-    cursor:pointer;
-}
-
-.zarat-file:focus + label {
-	outline: 1px dotted #000;
-	outline: -webkit-focus-ring-color auto 5px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
 }
