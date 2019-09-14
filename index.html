@@ -24,8 +24,8 @@ body, html {height: 100%}
     <h4>Free CSS, JS & PHP library</h4>
   </div>
   <div class="zarat-display-topleft zarat-container zarat-xlarge">
-    <p><button onclick="document.getElementById('cdn').style.display='block'" class="zarat-button zarat-black">CDN</button></p>
-    <p><button onclick="document.getElementById('api').style.display='block'" class="zarat-button zarat-black">API</button></p>
+    <p><button onclick="$('#cdn')[0].style.display = 'block'" class="zarat-button zarat-black">CDN</button></p>
+    <p><button onclick="$('#api')[0].style.display = 'block'" class="zarat-button zarat-black">API</button></p>
   </div>
   <div class="zarat-display-bottomleft zarat-container">
     <!-- 
@@ -40,7 +40,7 @@ body, html {height: 100%}
 <div id="cdn" class="zarat-modal">
   <div class="zarat-modal-content zarat-animate-zoom">
     <div class="zarat-container zarat-black zarat-display-container">
-      <span onclick="document.getElementById('cdn').style.display='none'" class="zarat-button zarat-display-topright zarat-large">x</span>
+      <span onclick="$('#cdn')[0].style.display = 'none'" class="zarat-button zarat-display-topright zarat-large">x</span>
       <h1>CSS</h1>
     </div>
     <div class="zarat-container">
