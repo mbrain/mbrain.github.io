@@ -246,7 +246,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .zarat-border-pale-red,.zarat-hover-border-pale-red:hover{border-color:#ffe7e7!important}.zarat-border-pale-green,.zarat-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .zarat-border-pale-yellow,.zarat-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.zarat-border-pale-blue,.zarat-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
-.form-control { border: 1px solid grey;}
+.form-control { border: 1px solid var(--main-color);}
 .form-group { width: 100%; padding: 1em; } 
 .form-group input { width: calc(100% ); border: .125em solid transparent} .form-group input:hover { border: .125em solid var(--main-color); }
 .form-group select { width: calc(100% ); border: .125em solid transparent} .form-group input:hover { border: .125em solid var(--main-color); }
