@@ -238,3 +238,21 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .zarat-border-dark-grey,.zarat-hover-border-dark-grey:hover,.zarat-border-dark-gray,.zarat-hover-border-dark-gray:hover{border-color:#616161!important}
 .zarat-border-pale-red,.zarat-hover-border-pale-red:hover{border-color:#ffe7e7!important}.zarat-border-pale-green,.zarat-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .zarat-border-pale-yellow,.zarat-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.zarat-border-pale-blue,.zarat-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+[type="file"] {
+  background: #f15d22;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: inherit;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+}
