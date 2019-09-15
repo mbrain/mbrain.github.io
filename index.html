@@ -26,6 +26,7 @@ body, html {height: 100%}
   <div class="zarat-display-topleft zarat-container zarat-xlarge">
     <p><button onclick="$('#cdn')[0].style.display = 'block'" class="zarat-button zarat-black">CDN</button></p>
     <p><button onclick="$('#api')[0].style.display = 'block'" class="zarat-button zarat-black">API</button></p>
+    <p><button onclick="$('#analytics')[0].style.display = 'block'" class="zarat-button zarat-black">Analytics</button></p>
   </div>
   <div class="zarat-display-bottomleft zarat-container">
     <!-- 
@@ -36,7 +37,7 @@ body, html {height: 100%}
   </div>
 </div>
 
-<!-- Menu Modal -->
+<!-- CDN Modal -->
 <div id="cdn" class="zarat-modal">
   <div class="zarat-modal-content zarat-animate-zoom">
     <div class="zarat-container zarat-black zarat-display-container">
@@ -56,12 +57,27 @@ body, html {height: 100%}
   </div>
 </div>
 
-<!-- Contact Modal -->
+<!-- API Modal -->
 <div id="api" class="zarat-modal">
   <div class="zarat-modal-content zarat-animate-zoom">
     <div class="zarat-container zarat-black">
       <span onclick="$('#api')[0].style.display = 'none'" class="zarat-button zarat-display-topright zarat-large">x</span>
       <h1>API</h1>
+    </div>
+    <div class="zarat-container">
+      <form action="/action_page.php" target="_blank">
+        <h4>Coming soon</h4>
+      </form>
+    </div>
+  </div>
+</div>
+  
+<!-- Analytics Modal -->
+<div id="api" class="zarat-modal">
+  <div class="zarat-modal-content zarat-animate-zoom">
+    <div class="zarat-container zarat-black">
+      <span onclick="$('#analytics')[0].style.display = 'none'" class="zarat-button zarat-display-topright zarat-large">x</span>
+      <h1>Analytics</h1>
     </div>
     <div class="zarat-container">
       <form action="/action_page.php" target="_blank">
