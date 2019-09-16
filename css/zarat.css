@@ -36,6 +36,7 @@ h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.zarat-wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .zarat-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.zarat-image-poster {background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;min-height:100%}
 .zarat-table,.zarat-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.zarat-table-all{border:1px solid #ccc}
 .zarat-bordered tr,.zarat-table-all tr{border-bottom:1px solid #ddd}.zarat-striped tbody tr:nth-child(even){background-color:#f1f1f1}
 .zarat-table-all tr:nth-child(odd){background-color:#fff}.zarat-table-all tr:nth-child(even){background-color:#f1f1f1}
