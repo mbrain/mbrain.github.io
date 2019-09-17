@@ -257,3 +257,7 @@ input[type="file"] { display: none; }
 
 label {float:left;}
 .z-full-height { min-height: 100%; }
+
+// fullscreen stuff
+.z-poster {position:relative;height:100vh;width:100%;overflow: hidden;}
+.z-poster video {position:absolute;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;-ms-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);}
