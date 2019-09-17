@@ -12,8 +12,8 @@ Embed URI: https://cdn.zarat.ml/js/z.js
             domReadyStack.shift().call(document);
         }
     });
-    function ion(selector) {
-        if (!(this instanceof ion)) return new ion(selector);
+    function proto(selector) {
+        if (!(this instanceof proto)) return new proto(selector);
         if (typeof selector === 'function') return handleDOMReady(selector);
         this.length = 0;
         this.nodes = [];
@@ -41,14 +41,14 @@ Embed URI: https://cdn.zarat.ml/js/z.js
         div.innerHTML = html;
         return div.firstChild;
     }
-    ion.fn = ion.prototype;
+    proto.fn = proto.prototype;
     // function each() 
     // can be called on $('.class'), $('#id') or $(array)
-    ion.fn.each = function(callback) {
+    proto.fn.each = function(callback) {
         if(Array.isArray(this[0])) Array.prototype.forEach.call(this[0], callback); 
         else Array.prototype.forEach.call(this, callback);
     };
-    ion.fn.addClass = function(classes) {
+    proto.fn.addClass = function(classes) {
         //return this.each(function() { this.className += ' ' + classes; });
         return this.each(function(el) { 
             if(!el.className.match('/' + classes + '/g')) {                
@@ -59,54 +59,62 @@ Embed URI: https://cdn.zarat.ml/js/z.js
             }
         });
     };
-    ion.fn.removeClass = function(className) {
+    proto.fn.removeClass = function(className) {
         //return this.each(function() { this.className = this.className.replace(new RegExp('\\b' + className + '\\b', 'g'), ''); });
         return this.each(function(el) { 
             el.className = el.className.replace(new RegExp('\\b' + className + '\\b', 'g'), '');
         });
     };
-    ion.fn.attr = function(val) {
+    proto.fn.attr = function(val) {
         return this[0].getAttribute(val);
     };
-    ion.fn.append = function(el) { 
+    proto.fn.append = function(el) { 
         this[0].appendChild(el[0]);
     };
-    ion.fn.prepend = function(el) {
+    proto.fn.prepend = function(el) {
         this[0].insertBefore(el[0], this[0].childNodes[0]);
     };
-    ion.fn.text = function(str) {
+    proto.fn.text = function(str) {
         return this[0].innerText = str;
     };
-    ion.fn.html = function(str) {
+    proto.fn.html = function(str) {
         return this[0].innerHTML = str;
     };
     // on()
     // @param name can be click, mouseover, mouseenter, and so on
     // @param handler the callback function
-    ion.fn.on = function(name, handler) {
+    proto.fn.on = function(name, handler) {
         return this.each(function(e) {
             e.addEventListener(name, handler);
         });
     };
-    ion.fn.wait = function(s, f) {
+    proto.fn.wait = function(s, f) {
         window.setTimeout(f, s);    
     };
-    ion.fn.ajax = function(config) {
+    proto.fn.ajax = function(config) {
         var http = new XMLHttpRequest();
         config.method = (config.method) ? config.method : 'GET';
         http.onreadystatechange = function() { if(http.readyState == 4 && http.status == 200) if(config.success) { config.success(http); } };
-        if(config.method == 'get' || config.method == 'GET') (config.data == '' || !config.data) ? http.open(config.method, config.action, true) : http.open(config.method, config.action + '?' + config.data, true);
-        else http.open(config.method, config.action, true);
+        if(config.method == 'get' || config.method == 'GET') (config.data == '' || !config.data) ? http.open(config.method, config.actproto, true) : http.open(config.method, config.actproto + '?' + config.data, true);
+        else http.open(config.method, config.actproto, true);
         if(config.contentType) http.setRequestHeader("Content-type", config.contentType);
         if(config.method == 'get' || config.method == 'GET') http.send();
         else (config.data == '' || !config.data) ? http.send() : http.send(config.data);
     };
-    ion.fn.log = function(str) {
+    proto.fn.log = function(str) {
         console.log('log: ' + str);
     };
-    ion.fn.toggle = function(el) {
-        //el = el[0];
-        el[0].style.display = (el[0].style.display == 'none' || el[0].style.display == 'undefined' || el[0].style.display == '') ? 'block' : 'none'; 
+    proto.fn.hasClass = function(_class) {        
+      return (this[0].className.indexOf(_class) != -1) ? true : false;
     };
-    window.Z = ion;
+    proto.fn.toggle = function(el) {
+        if(el.hasClass('z-hide')) {
+            el.addClass('z-show'); 
+            el.removeClass('z-hide');
+        } else {
+            el.addClass('z-hide');
+            el.removeClass('z-show');
+        }
+    };
+    window.$ = proto;
 })(window);
