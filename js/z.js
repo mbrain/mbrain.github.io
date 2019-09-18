@@ -95,8 +95,8 @@ Embed URI: https://cdn.zarat.ml/js/z.js
         var http = new XMLHttpRequest();
         config.method = (config.method) ? config.method : 'GET';
         http.onreadystatechange = function() { if(http.readyState == 4 && http.status == 200) if(config.success) { config.success(http); } };
-        if(config.method == 'get' || config.method == 'GET') (config.data == '' || !config.data) ? http.open(config.method, config.actproto, true) : http.open(config.method, config.actproto + '?' + config.data, true);
-        else http.open(config.method, config.actproto, true);
+        if(config.method == 'get' || config.method == 'GET') (config.data == '' || !config.data) ? http.open(config.method, config.action, true) : http.open(config.method, config.actproto + '?' + config.data, true);
+        else http.open(config.method, config.action, true);
         if(config.contentType) http.setRequestHeader("Content-type", config.contentType);
         if(config.method == 'get' || config.method == 'GET') http.send();
         else (config.data == '' || !config.data) ? http.send() : http.send(config.data);
