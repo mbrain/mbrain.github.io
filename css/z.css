@@ -258,4 +258,4 @@ input[type="file"] { display: none; }
 .z-file { width: calc(100%); background: none; padding:.5em; display:block; border:1px solid grey; color: var(--main-color); } .z-file:hover { background: var(--secondary-color); color: white; }
 
 label {float:left;}
-.z-full-height { min-height: 100%; }
+.z-full-height { height: 100%;min-height: 100%; }
