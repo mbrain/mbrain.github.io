@@ -37,6 +37,8 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .z-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .z-image-poster {background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;min-height:100%}
+.z-video-poster {position:relative;height:100vh;width:100%;overflow: hidden;}
+.z-video-poster video {position:absolute;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;-ms-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);}
 .z-table,.z-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.z-table-all{border:1px solid #ccc}
 .z-bordered tr,.z-table-all tr{border-bottom:1px solid #ddd}.z-striped tbody tr:nth-child(even){background-color:#f1f1f1}
 .z-table-all tr:nth-child(odd){background-color:#fff}.z-table-all tr:nth-child(even){background-color:#f1f1f1}
@@ -257,7 +259,3 @@ input[type="file"] { display: none; }
 
 label {float:left;}
 .z-full-height { min-height: 100%; }
-
-// fullscreen stuff
-.z-poster {position:relative;height:100vh;width:100%;overflow: hidden;}
-.z-poster video {position:absolute;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;-ms-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);}
