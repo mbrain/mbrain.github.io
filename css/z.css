@@ -76,6 +76,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .z-bar-block .z-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
 .z-bar-block.z-center .z-bar-item{text-align:center}.z-block{display:block;width:100%}
 .z-responsive{display:block;overflow-x:auto}
+.z-clearfix{clear:both}
 .z-container:after,.z-container:before,.z-panel:after,.z-panel:before,.z-row:after,.z-row:before,.z-row-padding:after,.z-row-padding:before,
 .z-cell-row:before,.z-cell-row:after,.z-clear:after,.z-clear:before,.z-bar:before,.z-bar:after{content:"";display:table;clear:both}
 .z-col,.z-half,.z-third,.z-twothird,.z-threequarter,.z-quarter{float:left;width:100%}
