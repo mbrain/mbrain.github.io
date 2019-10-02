@@ -1,4 +1,5 @@
 /*
+z.js
 Embed URI: https://cdn.zarat.ml/js/z.js
 */
 (function(window, undefined) {
