@@ -1,5 +1,6 @@
 /*
-Embed URI: https://cdn.zarat.ml/js/zarat.js
+z.js
+Embed URI: https://cdn.zarat.ml/js/z.js
 */
 (function(window, undefined) {
     var domReadyStack = [];
