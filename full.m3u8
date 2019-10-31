@@ -239,7 +239,7 @@ https://5a32c05065c79.streamlock.net/live/stream/playlist.m3u8
 https://zdfhls18-i.akamaihd.net/hls/live/744751/dach/high/master.m3u8
 #EXTINF:-1, Deutschland: Augsburger TV
 https://augsburgtv.iptv-playoutcenter.de/augsburgtv/augsburgtv.stream_1/master.m3u8
-#EXTINF:-1, Deutschland: Alex TV Berlin
+#EXTINF:-1, Deutschland: Alex TV
 https://alex-net.rosebud-media.de/bounce/alexlivetv20.smil/playlist.m3u8
 #EXTINF:-1, Deutschland: Allg&amp;auml;u TV
 http://tvallgaeu.iptv-playoutcenter.de:1935/tvallgaeu/tvallgaeu.stream_2/playlist.m3u8
@@ -387,8 +387,6 @@ http://livecdnh1.tvanywhere.ae/hls/nat_geo_wild/05.m3u8
 http://livecdnh1.tvanywhere.ae/hls/nat_geo/05.m3u8
 #EXTINF:-1, USA: New Orleans TV
 http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
-#EXTINF:-1, Deutschland: KIKA
-https://www.kika.de/livestream/index.html
 #EXTINF:-1, Deutschland: ARD Alpha
 https://brlive-lh.akamaihd.net/i/bralpha_germany@119899/index_3776_av-p.m3u8
 #EXTINF:-1, Sonstige: Bloomberg
@@ -455,3 +453,21 @@ http://live1.markenfunk.com/t1/live/chunklist.m3u8
 https://markenfunk.tv/plive/chunks.php?tenant=brandnite&id=48c8fa3d82fe3afa989c641eca4538c0&variant=2
 #EXTINF:-1, Österreich: Melodie Express
 https://58b42f6c8c9bf.streamlock.net:8080/live/melodie/chunklist_w1703757698.m3u8
+#EXTINF:-1, Deutschland: Erz TV
+http://62.67.13.53:1935/kabeljournal/live.stream/playlist.m3u8
+#EXTINF:-1, Österreich: Parlament live
+http://parlament.sf.apa.at/parlament_live1/parlament.smil/playlist.m3u8
+#EXTINF:-1, Deutschland: RIC
+https://58b42f6c8c9bf.streamlock.net:8080/live/rictv/playlist.m3u8
+#EXTINF:-1, Deutschland: Baden TV
+https://cdn.icu.de/rtplive/btv.stream/playlist.m3u8
+#EXTINF:-1, Deutschland: BLK TV
+http://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/BLKonline_high/playlist.m3u8
+#EXTINF:-1, Deutschland: Chemnitz TV
+http://chemnitz.iptv-playoutcenter.de:1935/chemnitz/chemnitzfernsehen.stream_2/playlist.m3u8
+#EXTINF:-1, Deutschland: Deutsches Musik Fernsehen
+http://tv.artcom-venture.de:1322/dmf/tv_720.m3u8
+#EXTINF:-1, Deutschland: DRF 1
+http://62.67.13.54:1935/drf1/drf1_livestream_1/playlist.m3u8
+#EXTINF:-1, Deutschland: Folx TV
+http://46.101.244.86:8081/folx-abr/live-abr/fle/fle1/chunks.m3u8
