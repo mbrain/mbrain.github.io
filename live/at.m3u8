@@ -1,0 +1,41 @@
+#EXTM3U
+#EXTINF:-1, Österreich: ORF 1
+https://orf1.mdn.ors.at/out/u/orf1/q4a/manifest.m3u8
+#EXTINF:-1, Österreich: ORF 2
+https://orf2.mdn.ors.at/out/u/orf2/q4a/manifest.m3u8
+#EXTINF:-1, Österreich: ORF 3
+https://orf3.mdn.ors.at/out/u/orf3/q4a/manifest.m3u8
+#EXTINF:-1, Österreich: ORF Sport Plus
+https://orfs.mdn.ors.at/out/u/orfs/q4a/manifest.m3u8
+#EXTINF:-1, Österreich: Servus TV
+https://rbmn-live.akamaized.net/hls/live/2002825/geoSTVATweb/master.m3u8
+#EXTINF:-1, Österreich: OKTO
+https://d38d1dtxhym0zi.cloudfront.net/LiveHTTPOrigin/okto/chunklist.m3u8
+#EXTINF:-1, Österreich: W24
+https://ms01.w24.at/W24/smil:liveevent.smil/chunklist_w730901449_b2176000_slger.m3u8
+#EXTINF:-1, Österreich: OE24
+http://apasfoe24l.sf.apa.at/ipad/oe24-live1/oe24.sdp/playlist.m3u8
+#EXTINF:-1, Österreich: Tirol TV
+http://lb.hd-livestream.de:1935/live/TirolTV/chunklist_w1178744335.m3u8
+#EXTINF:-1, Österreich: KroneHit TV
+http://bitcdn-kronehit.bitmovin.com/v2/hls/chunklist_b1628000.m3u8
+#EXTINF:-1, Österreich: FS1
+http://stream.fs1.tv:8080/hls/webstream.m3u8
+#EXTINF:-1, Österreich: M4
+https://5a32c05065c79.streamlock.net/live/stream/playlist.m3u8
+#EXTINF:-1, Österreich: 3SAT
+https://zdfhls18-i.akamaihd.net/hls/live/744751/dach/high/master.m3u8
+#EXTINF:-1, Österreich: Dorf TV
+https://stream.openplayout.org/hls/dorf_high/index.m3u8
+#EXTINF:-1, Österreich: P3
+http://p3-6.mov.at:1935/live/weekstream/playlist.m3u8
+#EXTINF:-1, Österreich: OE3 Visual
+https://varorflive.sf.apa.at/oe3hdfb/orf.sdp/chunklist_w1029116697.m3u8
+#EXTINF:-1, Österreich: InfoScreen
+https://livestream.infoscreen.at/live/infoscreen1/playlist.m3u8
+#EXTINF:-1, Österreich: T1
+http://live1.markenfunk.com/t1/live/chunklist.m3u8
+#EXTINF:-1, Österreich: Brandnite TV
+https://markenfunk.tv/plive/chunks.php?tenant=brandnite&id=48c8fa3d82fe3afa989c641eca4538c0&variant=2
+#EXTINF:-1, Österreich: Melodie Express
+https://58b42f6c8c9bf.streamlock.net:8080/live/melodie/chunklist_w1703757698.m3u8
