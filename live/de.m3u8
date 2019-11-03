@@ -1,4 +1,8 @@
-#EXTM3U 
+#EXTM3U
+#EXTINF:-1, LTV
+http://62.113.221.4/tv2000plus-live/_definst_/mp4:livestream3.stream/playlist.m3u8
+#EXTINF:-1, KTV
+http://d1pz8zear993v8.cloudfront.net/hlsme/kathtv.m3u8
 #EXTINF:-1, Folx TV
 http://46.101.244.86:8081/folx-abr/live-abr/fle/fle1/chunks.m3u8
 #EXTINF:-1, DRF 1
@@ -43,7 +47,7 @@ https://ma.anixa.tv/clips/stream/anixehd/index.m3u8
 http://tvallgaeu.iptv-playoutcenter.de:1935/tvallgaeu/tvallgaeu.stream_2/playlist.m3u8
 #EXTINF:-1, Alex TV
 https://alex-net.rosebud-media.de/bounce/alexlivetv20.smil/playlist.m3u8
-#EXTINF:-1, Augsburger TV
+#EXTINF:-1, Augsburg TV
 https://augsburgtv.iptv-playoutcenter.de/augsburgtv/augsburgtv.stream_1/master.m3u8
 #EXTINF:-1, TV Aktuell
 http://tvaktuellr.iptv-playoutcenter.de:1935/tvaktuellr/tvaktuellr.stream_3/playlist.m3u8
@@ -51,6 +55,10 @@ http://tvaktuellr.iptv-playoutcenter.de:1935/tvaktuellr/tvaktuellr.stream_3/play
 http://saarland2.iptv-playoutcenter.de/saarland2/saarland2.stream_2/playlist.m3u8?fluxustv.m3u8
 #EXTINF:-1, Saarland 1
 http://saarland1.iptv-playoutcenter.de/saarland1/saarland1.stream_1/playlist.m3u8?fluxustv.m3u8
+#EXTINF:-1, MTV
+https://unilivemtveu-lh.akamaihd.net/i/mtvde_1@134922/index_3500_av-p.m3u8
+#EXTINF:-1, Comedy Central
+https://wer11.wertvlive.com/r12/video.m3u8?token=Rh45MoyoC3
 #EXTINF:-1, KIKA
 https://kika-lh.akamaihd.net/i/livetvkika_ww@72295/master.m3u8
 #EXTINF:-1, Nickelodeon
