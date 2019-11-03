@@ -59,8 +59,6 @@ http://b2everyrai-lh.akamaihd.net/i/raimovie_1@67348/master.m3u8
 https://rt-news.secure.footprint.net/1103.m3u8
 #EXTINF:-1, USA: ABC News
 https://abclive1-lh.akamaihd.net/i/abc_live01@423395/master.m3u8
-#EXTINF:-1, Sonstige: Red Bull TV
-http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8
 #EXTINF:-1, Sonstige: The country network
 http://dcunilive2-lh.akamaihd.net/i/dclive_1@390829/master.m3u8
 #EXTINF:-1, Sonstige: Music Choice
@@ -99,8 +97,6 @@ http://serv25.vintera.tv:8081/test/aris/playlist.m3u8
 http://live.mediacdn.ru/sr1/arhis24/playlist.m3u8
 #EXTINF:-1, Russland: Астрахань Sport
 http://91.211.143.214/astrakhanrusporthd/tracks-v2a1/index.m3u8
-#EXTINF:-1, Russland: Зоо ТВ
-http://92.43.140.249/s92/04.m3u8
 #EXTINF:-1, Russland: Известия
 http://hls-igi.cdnvideo.ru/igi/igi_hq/playlist.m3u8
 #EXTINF:-1, Russland: OTВ
@@ -237,7 +233,7 @@ http://79.106.48.2/live/rtsh_3ott_p3/playlist.m3u8
 https://5a32c05065c79.streamlock.net/live/stream/playlist.m3u8
 #EXTINF:-1, Österreich: 3SAT
 https://zdfhls18-i.akamaihd.net/hls/live/744751/dach/high/master.m3u8
-#EXTINF:-1, Deutschland: Augsburger TV
+#EXTINF:-1, Deutschland: Augsburg TV
 https://augsburgtv.iptv-playoutcenter.de/augsburgtv/augsburgtv.stream_1/master.m3u8
 #EXTINF:-1, Deutschland: Alex TV
 https://alex-net.rosebud-media.de/bounce/alexlivetv20.smil/playlist.m3u8
@@ -357,6 +353,8 @@ https://skystreams-lh.akamaihd.net/i/SkyC1_1@500806/master.m3u8
 https://skystreams-lh.akamaihd.net/i/SkyC3_1@500808/master.m3u8
 #EXTINF:-1, USA: C-Span 2
 https://skystreams-lh.akamaihd.net/i/SkyC2_1@500807/master.m3u8
+#EXTINF:-1, Österreich: MTV
+https://unilivemtveu-lh.akamaihd.net/i/mtvde_1@134922/index_3500_av-p.m3u8
 #EXTINF:-1, Deutschland: ERF 1
 http://14000-l.z.core.cdn.streamfarm.net/007erfiphonelive/smil:stream_live.smil/chunklist_w1563145417_b240000.m3u8
 #EXTINF:-1, Deutschland: SR
@@ -431,7 +429,7 @@ http://usaserver.miamitvchannel.com/miamitv/smil:miamitv/chunklist_w199100510_b2
 https://livestream.infoscreen.at/live/infoscreen1/playlist.m3u8
 #EXTINF:-1, USA: Voice of America
 https://voa-lh.akamaihd.net/i/voa_mpls_tvmc6@320298/index_0540_av-p.m3u8?sd=10&rebase=on
-#EXTINF:-1, Sonstige: DJing Summer Vibes
+#EXTINF:-1, Sonstige: DJING Summer Vibes
 https://www.djing.com/tv/session_summer-vibes.m3u8
 #EXTINF:-1, USA: NASA TV
 http://iphone-streaming.ustream.tv/uhls/6540154/streams/live/iphone/playlist.m3u8
@@ -441,7 +439,7 @@ https://1861340594.rsc.cdn77.org/99Uq7jQ2n4mqbyFDkZHmYw==,1572501606/ls-54548-1/
 http://wowzaserver.net:1935/vivo21/vivo21/chunklist_w1142184271.m3u8
 #EXTINF:-1, USA: Action Sports
 https://nimble.dashmedia.tv/onestudio/actionsportstv/playlist.m3u8
-#EXTINF:-1, Sonstige: Fight Box
+#EXTINF:-1, USA: Fight Box
 http://88.216.48.147/flussonic/FightBoxHD/video.m3u8
 #EXTINF:-1, Sonstige: France 24
 http://f24hls-i.akamaihd.net/hls/live/221147/F24_EN_HI_HLS/master.m3u8
@@ -471,3 +469,21 @@ http://tv.artcom-venture.de:1322/dmf/tv_720.m3u8
 http://62.67.13.54:1935/drf1/drf1_livestream_1/playlist.m3u8
 #EXTINF:-1, Deutschland: Folx TV
 http://46.101.244.86:8081/folx-abr/live-abr/fle/fle1/chunks.m3u8
+#EXTINF:-1, Sonstige: Red Bull TV
+http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8
+#EXTINF:-1, Österreich: Comedy Central
+https://wer11.wertvlive.com/r12/video.m3u8?token=Rh45MoyoC3
+#EXTINF:-1, Deutschland: KTV
+http://d1pz8zear993v8.cloudfront.net/hlsme/kathtv.m3u8
+#EXTINF:-1, Deutschland: LTV
+http://62.113.221.4/tv2000plus-live/_definst_/mp4:livestream3.stream/playlist.m3u8
+#EXTINF:-1, Sonstige: DJING Animation
+https://www.djing.com/tv/animation.m3u8
+#EXTINF:-1, Sonstige: DJING Classics
+https://www.djing.com/tv/hits.m3u8
+#EXTINF:-1, Sonstige: DJING Electro Rock
+https://www.djing.com/tv/session_electro-rock.m3u8
+#EXTINF:-1, Sonstige: DJING French Touch
+https://www.djing.com/tv/session_french-touch.m3u8
+#EXTINF:-1, Sonstige: DJING Hedonist
+https://www.djing.com/tv/session_hedonist.m3u8
