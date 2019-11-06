@@ -45,3 +45,5 @@ https://orf3.mdn.ors.at/out/u/orf3/q4a/manifest.m3u8
 https://orf2.mdn.ors.at/out/u/orf2/q4a/manifest.m3u8
 #EXTINF:-1, ORF 1
 https://orf1.mdn.ors.at/out/u/orf1/q4a/manifest.m3u8
+#EXTINF:-1,Sky Sport Austria
+https://player.ooyala.com/hls/player/all/53NW5vaTE6dk5-p0bfO3hyjne_9iPT7W/media/4200.m3u8
