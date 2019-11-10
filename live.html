@@ -1,0 +1,33 @@
+<html>
+<head>
+<link rel="stylesheet prefetch" href="../css/minimalist.css">
+<script src='http://x-stream.ml/js/flowplayer/flowplayer.min.js'></script>
+<script src='http://x-stream.ml/js/flowplayer/flowplayer.hlsjs.min.js'></script>
+</head>
+<body>
+<script type="text/javascript">
+window.onload = function () { 
+  flowplayer("#player", {
+    splash: false,
+    autoplay: true,
+    ratio: 9/16,
+    swfHls: "http://x-stream.ml/flowplayerhls.swf",
+    clip: {
+      hlsjs: {
+        safari: true
+      },
+      live: true,
+      sources: [
+        { 
+          type: "application/x-mpegurl",
+          src: "http://lb.hd-livestream.de:1935/live/TirolTV/chunklist_w1178744335.m3u8" 
+        }
+      ]
+    } 
+  }); 
+};
+</script>
+
+<div id="player" class="fp-slim no-buffer"></div>
+</body>
+</html>
