@@ -36,8 +36,9 @@
 	var pqs = new ParsedQueryString();   
 	var parameterNames = pqs.params(false);
 	var parameters = {
-        src: "rtmp://zarat.ml:1935/live/" + pqs.param('src'),
+        //src: "rtmp://zarat.ml:1935/live/" + pqs.param('src'),
 		//src: "rtmp://zarat.ml:1935/live/<?php echo $_GET['src']; ?>",
+		src: "rtmp://zarat.ml:1935/live/zarat",
         autoPlay: "true",
 		verbose: true,
 		controlBarAutoHide: "true",
