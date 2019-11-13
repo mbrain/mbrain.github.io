@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Rtmp Server</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script type="text/javascript" src="swfobject.js"></script>
+        <script type="text/javascript" src="ParsedQueryString.js"></script>
+	</head>
+    <body>
+    
+<script type="text/javascript">
+    var player = null;
+
+    function loadStream(url) {
+        player.setMediaResourceURL(url);
+    }
+
+    function getlink(url) {
+        return "/vod.html?src=" + encodeURIComponent(url);
+    }
+
+    function jsbridge(playerId, event, data) {
+        if(player == null) player = document.getElementById(playerId);
+        switch(event) {
+            case "onJavaScriptBridgeCreated":
+                listStreams(teststreams,"streamlist");
+                break;
+            case "timeChange":
+            case "timeupdate":
+            case "progress":
+                break;
+            default:
+                console.log(event, data);
+        }
+    }
+
+	var pqs = new ParsedQueryString();   
+	var parameterNames = pqs.params(false);
+	var parameters = {
+        src: "rtmp://zarat.ml:1935/live/" + pqs.param('src'),
+		//src: "rtmp://zarat.ml:1935/live/<?php echo $_GET['src']; ?>",
+        autoPlay: "true",
+		verbose: true,
+		controlBarAutoHide: "true",
+		controlBarPosition: "bottom",
+		poster: "logo.png",
+		javascriptCallbackFunction: "jsbridge",
+		plugin_hls: "flashlsOSMF.swf",
+		hls_minbufferlength: -1,
+		hls_maxbufferlength: 30,
+		hls_lowbufferlength: 3,
+		hls_seekmode: "KEYFRAME",
+		hls_startfromlevel: -1,
+		hls_seekfromlevel: -1,
+		hls_live_flushurlcache: false,
+		hls_info: true,
+		hls_debug: false,
+		hls_debug2: false,
+		hls_warn: true,
+		hls_error: true,
+		hls_fragmentloadmaxretry : -1,
+		hls_manifestloadmaxretry : -1,
+		hls_capleveltostage : false,
+		hls_maxlevelcappingmode : "downscale"
+	};
+
+	for (var i = 0; i < parameterNames.length; i++) {
+		var parameterName = parameterNames[i];
+		if(parameterName != "src") parameters[parameterName] = pqs.param(parameterName) || parameters[parameterName];
+	}
+
+	var wmodeValue = "direct";
+	var wmodeOptions = ["direct", "opaque", "transparent", "window"];
+	if (parameters.hasOwnProperty("wmode")) {
+		if (wmodeOptions.indexOf(parameters.wmode) >= 0) wmodeValue = parameters.wmode;
+		delete parameters.wmode;
+	}
+
+
+    swfobject.embedSWF(
+      	"GrindPlayer.swf",
+      	"GrindPlayer",
+      	640,
+      	480,
+      	"10.1.0",
+      	"expressInstall.swf",
+      	parameters, { allowFullScreen: "true", wmode: wmodeValue }, { name: "GrindPlayer" }
+    );
+</script>
+    <h1>live!</h1>
+
+    <div id="GrindPlayer">
+    	<p>Alternative content</p>
+    </div>
+
+    </body>
+</html>
